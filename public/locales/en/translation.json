@@ -1,0 +1,81 @@
+{
+  "login": {
+    "email": "Email",
+    "pass": "Password",
+    "log": "Log In",
+    "logWFB": "Login with Facebook",
+    "noAcc": "Don't have an account?",
+    "signup": "Sign Up.",
+    "or": "OR"
+  },
+  "create": {
+    "create": "Create an account",
+    "logWFB": "Login with Facebook",
+    "or": "OR",
+    "email": "Email",
+    "name&last": "Name & Last Name",
+    "user": "User Name",
+    "pass": "Password",
+    "next": "Next",
+    "bDay": "Birthday",
+    "set": "Set your date of birth",
+    "done": "Create",
+    "have": "Have an account?",
+    "login": "Log In."
+  },
+  "profile": {
+    "post": "Posts",
+    "followers": "Followers",
+    "following": "Following",
+    "following2": "Following",
+    "edit": "Edit",
+    "editProfile": "Edit Profile",
+    "done": "Done",
+    "name": "Name",
+    "username": "Username",
+    "bio": "Bio",
+    "links": "Links",
+    "photo": "Choice a photo",
+    "no_posts": "No posts yet."
+  },
+  "settings": {
+    "logo": "Settings",
+    "lang": "Lang select",
+    "theme": "Theme mode",
+    "out": "Log Out"
+  },
+  "add_post": {
+    "new": "New post",
+    "add": "Add post",
+    "story": "Story Created",
+    "select": "Select Image or Video",
+    "descr": "Description",
+    "done": "Post Created"
+  },
+  "followers": {
+    "head": "Followers",
+    "head2": "Following",
+    "follow": "Follow",
+    "unfollow": "Unfollow"
+  },
+  "main": {
+    "story": "Your story",
+    "video": "Відео поки ще немає"
+  },
+  "search": {
+    "search": "Search",
+    "name": "Username"
+  },
+  "otherUser": {
+    "sendMessage": "Send a message"
+  },
+  "comments": {
+    "comments": "Comments",
+    "add": "Post"
+  },
+  "messages": {
+    "ms": "Messages",
+    "noChats": "No chats yet",
+    "noMs": "No messages yet"
+  }
+}

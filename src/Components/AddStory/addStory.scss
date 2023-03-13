@@ -1,0 +1,56 @@
+.add_stories {
+  padding: 20px 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    a {
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  form {
+    width: 100%;
+    position: relative;
+    .image_select {
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      label {
+        cursor: pointer;
+        input {
+          display: none;
+        }
+        .select {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+      img,
+      video {
+        height: 300px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    }
+
+    .description {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}

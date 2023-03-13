@@ -1,0 +1,44 @@
+.search_user {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  .search_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    button {
+      position: absolute;
+      left: 0;
+      border: 0;
+      background-color: inherit;
+    }
+  }
+  form {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+  .users_to_show {
+    display: flex;
+    padding-top: 20px;
+    .single_user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .user_info {
+        .name {
+          opacity: 0.5;
+          font-size: 14px;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  // font-family: 'Grand Hotel', cursive; for the logo
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-image: url(../../assets/phone.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  scroll-behavior: smooth;
+}
+
+#root {
+  height: 750px;
+  width: 350px;
+  margin: 20px auto 20px;
+  border-radius: 40px;
+  overflow: scroll;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.box_insta {
+  width: 350px;
+}
+@media (min-width: 200px) and (max-width: 400px) {
+  .box_insta {
+    width: 100%;
+  }
+  #root {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    overflow: scroll;
+  }
+  body {
+    background-image: none;
+  }
+  .box_insta {
+    height: max-content;
+  }
+  .navigation {
+    width: 100%;
+    border-radius: 0;
+    bottom: 0;
+  }
+  .main_page {
+    &-nav {
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+  .chat {
+    .chat_nav {
+      width: 100%;
+      border-radius: 0;
+      top: 0;
+    }
+    form {
+      width: 100%;
+      border-radius: 0;
+      bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.user_story {
+  position: fixed;
+  z-index: 200;
+  background: inherit;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  .close_story {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    z-index: 1000;
+    cursor: pointer;
+    border: 0;
+    background: inherit;
+  }
+  .story_replay {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 50px;
+    z-index: 1001;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon_select {
+      position: absolute;
+      top: -200px;
+      z-index: 1002;
+
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 20px;
+      height: 80px;
+      width: 190px;
+      gap: 15px;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        border: 0;
+        background: transparent;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+
+.stories_list{
+  padding-top: 55px;
+}

@@ -1,0 +1,112 @@
+.create_user {
+  display: grid;
+  grid-template-rows: 30px repeat(12, 1fr);
+  align-items: center;
+  padding: 10px;
+  h1 {
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 45px;
+    font-family: "Grand Hotel", cursive;
+  }
+  h2 {
+    grid-row: 3/4;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .create_facebook {
+    grid-row: 4/5;
+  }
+  .variant_create {
+    grid-row: 5/6;
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 44%;
+      height: 1px;
+      background-color: rgb(159, 159, 159);
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 44%;
+      height: 1px;
+      background-color: rgb(159, 159, 159);
+      left: 100%;
+      top: 50%;
+      transform: translate(-100%, -50%);
+    }
+  }
+
+  form {
+    grid-row: 6/12;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    a {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .add_shadow {
+      box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+        0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+      border-radius: 4px;
+    }
+  }
+  .create_account_login {
+    grid-row: 12/14;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgb(159, 159, 159);
+  }
+}
+
+.date_select {
+  display: grid;
+  grid-template-rows: repeat(11, 1fr);
+  padding: 10px;
+  gap: 10px;
+  .date-picker {
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+      0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    border-radius: 4px;
+  }
+  .icons {
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(245, 119, 112);
+  }
+  h3 {
+    grid-row: 3/4;
+    text-align: center;
+  }
+  form {
+    grid-row: 4/6;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .select_date_login {
+    grid-row: 11/12;
+    border-top: 1px solid rgb(159, 159, 159);
+    text-align: center;
+  }
+}

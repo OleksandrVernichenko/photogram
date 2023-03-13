@@ -1,0 +1,51 @@
+.following {
+  display: flex;
+  width: 100%;
+  padding: 20px 10px;
+  flex-direction: column;
+  &-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    a {
+      position: absolute;
+      left: 0;
+    }
+  }
+  &-box {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  &-user {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .user_info {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+
+      .avatar-wrapper {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        .following_name {
+          font-size: 12px;
+
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      button {
+        font-size: 12px;
+      }
+    }
+  }
+}

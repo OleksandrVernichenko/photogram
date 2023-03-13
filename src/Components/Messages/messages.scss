@@ -1,0 +1,151 @@
+.messages {
+  padding: 20px 10px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  .messages_nav {
+    position: sticky;
+    display: flex;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    button {
+      position: absolute;
+      left: 0;
+      border: 0;
+      background-color: transparent;
+    }
+  }
+  .messages_list {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    a {
+      gap: 5px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      .last_message {
+        display: flex;
+        width: 100%;
+        gap: 3px;
+        flex-direction: column;
+        .name {
+          font-size: 15px;
+          font-weight: 600;
+        }
+        &-data {
+          display: flex;
+          width: 100%;
+          position: relative;
+          align-items: center;
+          .text {
+            opacity: 0.7;
+          }
+          .time {
+            font-size: 10px;
+          }
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
+
+.chat {
+  padding: 0px 0px;
+  background: inherit;
+  display: flex;
+  overflow-x: hidden;
+  position: relative;
+  width: inherit;
+  flex-direction: column;
+  width: 100%;
+  .chat_nav {
+    position: fixed;
+    top: 15px;
+    width: 350px;
+    padding-top: 10px;
+    border-radius: 40px 40px 0 0;
+    background: inherit;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+    }
+    button {
+      position: absolute;
+      left: 0;
+      border: 0;
+      background-color: transparent;
+    }
+  }
+  .text_list {
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 60px;
+    .date {
+      padding-top: 10px;
+    }
+    .right,
+    .left {
+      align-self: flex-end;
+      position: relative;
+      display: flex;
+      word-break: break-all;
+      padding: 5px 25px 15px 5px;
+      border-radius: 3px 3px 0px 3px;
+      .time {
+        font-size: 11px;
+        position: absolute;
+        right: 4px;
+        bottom: 0px;
+        font-weight: 200;
+      }
+      .text {
+        font-size: 14px;
+        font-weight: 400;
+        opacity: 0.8;
+      }
+    }
+    .left {
+      align-self: flex-start;
+      padding: 5px 5px 15px 25px;
+      border-radius: 3px 3px 3px 0px;
+      .time {
+        font-size: 11px;
+        position: absolute;
+        right: 4px;
+        bottom: 1px;
+        font-weight: 200;
+      }
+    }
+  }
+  form {
+    padding-top: 5px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background: inherit;
+    gap: 5px;
+    justify-content: center;
+    width: 350px;
+    bottom: 55px;
+    border-radius: 0 0 40px 40px;
+    button {
+      border: 0;
+      background: transparent;
+    }
+  }
+}

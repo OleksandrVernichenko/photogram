@@ -1,0 +1,33 @@
+.main_page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: inherit;
+  width: 100%;
+  &-nav {
+    background: inherit;
+    position: fixed;
+    padding: 10px 10px 0 10px;
+    width: 350px;
+    border-radius: 40px 40px 0 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+      font-family: "Grand Hotel", cursive;
+      font-size: 30px;
+    }
+  }
+
+  .add_story {
+    border: 0;
+    background: transparent;
+    background: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    font-size: 12px;
+  }
+}

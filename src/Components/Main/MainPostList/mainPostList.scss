@@ -1,0 +1,53 @@
+.main_posts_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+
+  .main_posts_single {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .by_user {
+      padding-left: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    .video_main {
+      position: relative;
+      video {
+        height: 100%;
+        width: 100%;
+        display: block;
+      }
+      button {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        border: 0;
+        background: inherit;
+        cursor: pointer;
+      }
+    }
+    p {
+      padding-left: 10px;
+    }
+    .post_actions {
+      margin-top: 10px;
+      padding-left: 10px;
+      display: flex;
+      gap: 20px;
+      button {
+        border: 0;
+        background: inherit;
+        cursor: pointer;
+      }
+    }
+  }
+}

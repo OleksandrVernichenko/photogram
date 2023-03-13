@@ -1,0 +1,47 @@
+.followers {
+  display: flex;
+  width: 100%;
+  padding: 20px 10px;
+  flex-direction: column;
+  &-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    a {
+      position: absolute;
+      left: 0;
+    }
+  }
+  &-box {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    .user_info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .follower {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+
+      &-name {
+        display: flex;
+        font-size: 14px;
+        flex-direction: column;
+        .name{
+          opacity: .5;
+        }
+      }
+      button{
+        font-size: 12px;
+      }
+    }
+  }
+}

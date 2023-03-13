@@ -1,0 +1,72 @@
+.other_user_posts {
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+
+  .other_user_posts_nav {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    padding-top: 10px;
+    background-color: inherit;
+    width: inherit !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+    button {
+      position: absolute;
+      left: 0;
+      border: 0;
+      background-color: inherit;
+    }
+    h2 {
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  }
+  .other_user_post {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    .other_user_info {
+      display: flex;
+      align-items: flex-end;
+      padding: 10px;
+      gap: 5px;
+    }
+    .other_user_post_info {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+    p {
+      padding: 10px;
+    }
+    .post_actions {
+      display: flex;
+      padding: 10px;
+      gap: 20px;
+      align-items: center;
+      button {
+        border: 0;
+        background: inherit;
+      }
+    }
+  }
+}
+
+.other_user_video {
+  position: relative;
+  button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
